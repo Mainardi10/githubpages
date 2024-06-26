@@ -1,0 +1,152 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida: Campo vs Cidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #388E3C;
+        }
+
+        section {
+            background-color: white;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .toggle-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-button:hover {
+            background-color: #388E3C;
+        }
+
+        .details {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vida: Campo vs Cidade</h1>
+</header>
+
+<nav>
+    <a href="#campo">Vida no Campo</a>
+    <a href="#cidade">Vida na Cidade</a>
+</nav>
+
+<section id="campo">
+    <h2>Vida no Campo</h2>
+    <img class="image" src="https://blog.cowboystore.com.br/wp-content/uploads/2023/10/vantagens-de-viver-uma-vida-no-campo-1.jpg" alt="Vida no Campo" height="600" lang="400">
+    <p>A vida no campo é marcada pela tranquilidade, contato com a natureza e simplicidade do dia a dia. O ar puro, as paisagens bucólicas e a comunidade unida são características marcantes.</p>
+    <button class="toggle-button" onclick="toggle('campo-details')">Saiba Mais</button>
+    <div id="campo-details" class="details">
+        <p><strong>Principais vantagens:</strong> Ar puro, contato com a natureza, comunidade unida.</p>
+        <p><strong>Oportunidades:</strong> Empregos em fazendas, projetos de agricultura sustentável, voluntariado em organizações ambientais.</p>
+    </div>
+</section>
+
+<section id="cidade">
+    <h2>Vida na Cidade</h2>
+    <img class="image" src="vantagens-de-viver-uma-vida-na-cidade.jpg" alt="Vida na Cidade">
+    <p>Na cidade, a vida é mais agitada e dinâmica. Há uma variedade de oportunidades de emprego, acesso a serviços e conveniências urbanas.</p>
+    <button class="toggle-button" onclick="toggle('cidade-details')">Saiba Mais</button>
+    <div id="cidade-details" class="details">
+        <p><strong>Principais vantagens:</strong> Diversidade cultural, acesso a serviços, oportunidades de emprego.</p>
+        <p><strong>Oportunidades:</strong> Empregos em empresas locais e multinacionais, networking em eventos profissionais, participação em grupos comunitários.</p>
+    </div>
+</section>
+
+<script>
+    function toggle(elementId) {
+        var element = document.getElementById(elementId);
+        element.classList.toggle('show');
+    }
+</script>
+
+</body>
+</html>
